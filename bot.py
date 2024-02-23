@@ -2,13 +2,13 @@ from sungram.bot import SungramBot
 
 bot_token = "6986990228:AAEiBjtqx68pn5-UYeNYnm2LHJ7E-ffBJI8"
 telegram_bot = SungramBot(token=bot_token)
-
+"""
 @telegram_bot.on_start
 def handle_start(update):
     chat_id = update.message.chat_id
     message = "Welcome to My Telegram Bot! Type /help for assistance."
     telegram_bot.send_message(chat_id, message)
-
+"""
 @telegram_bot.on_message(filters.command("help"))
 def handle_help(update):
     chat_id = update.message.chat_id
