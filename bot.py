@@ -24,8 +24,8 @@ def handle_help(update):
     # Implement your /help functionality here
     pass
 
-# Register handlers
-telegram_bot.on_message(handle_message)
+# Set handlers
+telegram_bot.on("message", handle_message)
 
 # Run the bot
 telegram_bot.run()
